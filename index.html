@@ -66,6 +66,7 @@
             margin: 50px 0;
         }
 
+        /* BOTÕES PADRÃO */
         .button {
             display: inline-block;
             padding: 14px 30px;
@@ -81,6 +82,45 @@
         .button:hover {
             background-color: #b5835a;
             transform: scale(1.05);
+        }
+
+        /* BOTÃO DE CADASTRO DESTACADO */
+        .cadastro-container {
+            margin-bottom: 30px;
+        }
+
+        .mao {
+            width: 60px;
+            display: block;
+            margin: 0 auto 10px auto;
+            animation: bounce 1.2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        .cadastro-btn {
+            display: inline-block;
+            padding: 18px 40px;
+            background: linear-gradient(to right, #d4a373, #b5835a);
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        .cadastro-btn:hover {
+            transform: scale(1.08);
+        }
+
+        .cadastro-btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.6);
         }
 
         .contacts {
@@ -150,6 +190,16 @@
     </div>
 
     <div class="buttons">
+
+        <!-- BOTÃO DE CADASTRO NOVO -->
+        <div class="cadastro-container">
+            <img src="mao.png" alt="Clique abaixo" class="mao">
+            <a href="SEU_LINK_DE_CADASTRO_AQUI" target="_blank" class="cadastro-btn">
+                FAÇA SEU CADASTRO AGORA
+            </a>
+        </div>
+
+        <!-- BOTÕES ANTIGOS -->
         <a href="https://wa.me/557583127633?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20vagas%20disponíveis!" target="_blank" class="button">
             Falar no WhatsApp
         </a>
@@ -157,6 +207,7 @@
         <a href="https://instagram.com/legalizaestagioseempregos22" target="_blank" class="button">
             Visitar Instagram
         </a>
+
     </div>
 
     <div class="contacts">
@@ -175,3 +226,7 @@
 
 </body>
 </html>
+
+</body>
+</html>
+
