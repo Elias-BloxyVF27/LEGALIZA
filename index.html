@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEGALIZA - Estágios e Empregos</title>
+    <title>LEGALIZA - Cursos e Vagas (Estágios e Empregos)</title>
     <link rel="icon" href="logo.ico">
 
     <style>
@@ -84,6 +84,40 @@
             transform: scale(1.05);
         }
 
+        /* BOTÕES DE NAVEGAÇÃO PRINCIPAL (Candidato, Empresa, Cursos) */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 40px 0 20px 0;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background-color: transparent;
+            color: #d4a373;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 2px solid #d4a373;
+            transition: all 0.25s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-btn:hover {
+            background-color: #d4a373;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 14px rgba(212, 163, 115, 0.35);
+        }
+
+        .nav-btn:active {
+            transform: scale(0.97);
+        }
+
         /* BOTÃO DE CADASTRO DESTACADO */
         .cadastro-container {
             margin-bottom: 30px;
@@ -149,6 +183,11 @@
             h1 {
                 font-size: 30px;
             }
+
+            .nav-btn {
+                padding: 13px 24px;
+                font-size: 14px;
+            }
         }
 
     </style>
@@ -157,7 +196,7 @@
 <body>
 
     <div class="hero">
-        <h1>LEGALIZA - Estágios e Empregos</h1>
+        <h1>LEGALIZA - Cursos e Vagas (Estágios e Empregos)</h1>
         <img src="imagem.png" alt="Logo Legaliza" class="logo">
 
         <div class="music">
@@ -198,7 +237,14 @@
 
     <div class="buttons">
 
-        <!-- BOTÃO DE CADASTRO NOVO -->
+        <!-- BOTÕES DE NAVEGAÇÃO PRINCIPAL -->
+        <div class="nav-buttons">
+            <a href="#" class="nav-btn">👤 Candidato(a)</a>
+            <a href="#" class="nav-btn">🏢 Empresa</a>
+            <a href="#" class="nav-btn">📚 Cursos</a>
+        </div>
+
+        <!-- BOTÃO DE CADASTRO -->
         <div class="cadastro-container">
             <img src="mao.png" alt="Clique abaixo" class="mao">
             <a href="https://docs.google.com/forms/d/1FJeusyUlI0d6qynXu6njOWQuXZ4xfJUHJ389iR0dHuk/viewform?edit_requested=true" target="_blank" class="cadastro-btn">
@@ -206,7 +252,7 @@
             </a>
         </div>
 
-        <!-- BOTÕES ANTIGOS -->
+        <!-- BOTÕES DE CONTATO -->
         <a href="https://wa.me/557581141580?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20vagas%20disponíveis!" target="_blank" class="button">
             Falar no WhatsApp
         </a>
@@ -224,7 +270,7 @@
     </div>
 
     <footer>
-        © <span id="ano"></span> Legaliza - Estágios e Empregos. Todos os direitos reservados.
+        © <span id="ano"></span> Legaliza - Cursos e Vagas (Estágios e Empregos). Todos os direitos reservados.
     </footer>
 
     <script>
@@ -233,10 +279,6 @@
 
 </body>
 </html>
-
-</body>
-</html>
-
 
 
 
