@@ -174,7 +174,17 @@
             color: #cccccc;
             border-top: 1px solid #d4a373;
         }
+.dev-link {
+    color: #d4a373;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+.dev-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
         @media (max-width: 768px) {
             .section {
                 padding: 40px 8%;
@@ -263,8 +273,13 @@
     </div>
 
     <footer>
-        © <span id="ano"></span> Legaliza - Cursos e Vagas (Estágios e Empregos). Todos os direitos reservados.
-    </footer>
+    © <span id="ano"></span> Legaliza - Cursos e Vagas (Estágios e Empregos). Todos os direitos reservados.
+    <br><br>
+    Desenvolvido por:
+    <a href="https://www.instagram.com/elias_v.f.m/" target="_blank" class="dev-link">
+        @elias_v.f.m
+    </a>
+</footer>
 
     <script>
         document.getElementById("ano").textContent = new Date().getFullYear();
